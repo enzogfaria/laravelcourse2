@@ -14,6 +14,7 @@ class DashboardController extends Controller
         ]);
         $idea->save();
 
+
         return view('dashboard',[
             'ideas' => Idea::all()
         ]);
